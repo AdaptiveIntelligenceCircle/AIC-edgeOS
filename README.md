@@ -201,7 +201,7 @@ AIC-edgeOS is developed under the belief that:
 
 ## 12. License
 
-This project is released under the Apache License 2.0.  
+This project is released under the GNU GPL-3.0.  
 See `LICENSE` for details.
 
 ---
