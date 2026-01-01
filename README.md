@@ -8,7 +8,7 @@ This project is part of the **Adaptive Intelligence Circle (AIC)** ecosystem.
 
 -- 
 
-<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/d81f5db6-746b-4205-a78a-631e26a55908" />
+<img width="1024" height="1024" alt="image" src="https://github.com/user-attachments/assets/92bc8747-84af-4c33-a377-73e7c36a24f1" />
 
 ## 1. Why AIC-edgeOS exists
 
