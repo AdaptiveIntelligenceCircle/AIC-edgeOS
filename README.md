@@ -1,6 +1,6 @@
-# AIC-edgeOS
+# AIC-EdgeOS
 
-**AIC-edgeOS** is a local-first, adaptive operating system prototype derived from **Adaptive OS**,  
+**AIC-EdgeOS** is a local-first, adaptive operating system prototype derived from **Adaptive OS**,  
 designed to operate under constrained environments while preserving long-term correctness,
 self-defense, and ethical alignment.
 
@@ -29,16 +29,16 @@ In real-world environments — especially at the edge — systems must:
 
 ---
 
-## 2. What AIC-edgeOS is (and is not)
+## 2. What AIC-EdgeOS is (and is not)
 
-### AIC-edgeOS **is**
+### AIC-EdgeOS **is**
 - A **branch implementation** of Adaptive OS
 - A **reference implementation** of adaptive OS principles under constraints
 - Local-first, resource-aware, and survivable by design
 - Built around **adaptive control loops**, not static logic
 - Designed to integrate with introspection and behavioral reasoning systems (IBCS)
 
-### AIC-edgeOS **is not**
+### AIC-EdgeOS **is not**
 - A general-purpose replacement for Linux
 - A commercial OS product
 - A model-centric AI system
@@ -57,7 +57,7 @@ Adaptive OS (meta-level)
 
 ```
 - **Adaptive OS** defines *what must exist*
-- **AIC-edgeOS** demonstrates *how it can exist under constraints*
+- **AIC-EdgeOS** demonstrates *how it can exist under constraints*
 
 If AIC-edgeOS succeeds, it validates Adaptive OS principles.  
 If it fails, Adaptive OS itself is not invalidated.
@@ -78,7 +78,7 @@ If it fails, Adaptive OS itself is not invalidated.
 
 ## 5. High-level Architecture
 
-At its core, AIC-edgeOS follows an adaptive loop:
+At its core, AIC-EdgeOS follows an adaptive loop:
 
 > Sense → Evaluate → Decide → Act → Verify → Rollback (if needed)
 
@@ -90,7 +90,7 @@ This loop operates continuously at the OS level, not as an external controller.
 ## 6. Project Structure
 
 ```pgsql 
-AIC-edgeOS/
+AIC-EdgeOS/
 │
 ├── README.md
 ├── LICENSE
@@ -145,7 +145,7 @@ AIC-edgeOS/
 
 ## 7. Interaction with IBCS
 
-AIC-edgeOS is designed to **expose introspection points**, not to embed reasoning logic directly.
+AIC-EdgeOS is designed to **expose introspection points**, not to embed reasoning logic directly.
 
 - OS executes
 - OS observes itself
@@ -171,7 +171,7 @@ This separation prevents:
 
 ## 9. Non-goals
 
-To avoid ambiguity, AIC-edgeOS explicitly does **not** aim to:
+To avoid ambiguity, AIC-EdgeOS explicitly does **not** aim to:
 
 - Compete with existing OS ecosystems
 - Maximize throughput or benchmark scores
@@ -192,7 +192,7 @@ Backward compatibility is *not* guaranteed at this stage.
 
 ## 11. Philosophy
 
-AIC-edgeOS is developed under the belief that:
+AIC-EdgeOS is developed under the belief that:
 
 > Systems that cannot adapt ethically under constraint  
 > will eventually fail socially, not just technically.
@@ -208,7 +208,7 @@ See `LICENSE` for details.
 
 ## 13. A note from the founder
 
-AIC-edgeOS is not built to win a race.  
+AIC-EdgeOS is not built to win a race.  
 It is built to remain correct when races distort judgment.
 
 If you are looking for speed, this may not be for you.  
