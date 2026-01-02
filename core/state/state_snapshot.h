@@ -10,8 +10,7 @@ namespace aic :: edge :: core
         public:
         void capture(const string &key, double value); 
         double get(const string &key) const; 
-
-        private: 
+ 
         unordered_map<string, double> states; 
     }; 
 }
