@@ -1,29 +1,30 @@
 #include "state_diff.h"
-using namespace std; 
+using namespace std;
 #include "state_snapshot.h"
 
-namespace aic :: edge :: core
+namespace aic::edge::core
 {
-    vector<StateChange> StateDiff :: diff(
-        const StateSnapshot &old_s, 
-        const StateSnapshot &new_s
-    )
+    vector<StateChange> StateDiff::diff(
+        const StateSnapshot &old_s,
+        const StateSnapshot &new_s)
     {
-        vector<StateChange> changes; 
-        for (const auto &[key, new_val] : new_s.states)
+
+        vector<StateChange> changes;
+
+        const auto &new_view = new_s.view();
+        const auto &old_view = old_s.view();
+
+        for (const auto &[key, new_val] : new_view)
         {
-            double old_val = 0.0; 
-            try{
-                old_val = old_s.get(key); 
-            } catch(...)
-            {
-                old_val = 0.0; 
-            }
+            auto it = old_view.find(key);
+            double old_val = (it == old_view.end()) ? 0.0 : it->second;
+
             if (old_val != new_val)
             {
-                changes.push_back(StateChange{key, old_val}); 
+                changes.push_back(StateChange{key, old_val, new_val});
             }
         }
-        return changes; 
+        return changes;
     }
 }
+
