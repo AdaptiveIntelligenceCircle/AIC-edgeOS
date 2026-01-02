@@ -11,6 +11,15 @@ namespace aic :: edge :: core
     class PolicyEngine
     {
         public: 
-        void evaluate(const StateSnapshot &snapshot); 
+        enum class LifecycleHint
+        {
+            NONE, 
+            STAY, 
+            SUGGEST_STRESSED, 
+            SUGGEST_DEGRADED, 
+            SUGGEST_RECOVERY
+        };
+
+        LifecycleHint evaluate(const StateSnapshot &snapshot); 
     }; 
 }
