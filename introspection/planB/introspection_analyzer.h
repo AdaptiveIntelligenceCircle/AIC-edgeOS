@@ -16,6 +16,13 @@ namespace aic :: introspection
     class IntrospectionAnalyzer
     {
         public: 
-        
+        virtual ~IntrospectionAnalyzer() = default; 
+
+        virtual IntrospectionReport analyze(
+            const IntrospectionSnapshot &snapshot
+        ) = 0; 
+
+        protected: 
+        IntrospectionAnalyzer () = default; 
     }; 
-}
+} // namespace aic :: introspection.. 
