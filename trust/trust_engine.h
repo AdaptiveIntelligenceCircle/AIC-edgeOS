@@ -5,6 +5,7 @@
 #include "trust_evidence.h"
 
 #include "policy.h"
+#include "trust_result.h"
 using namespace std; 
 
 namespace aic :: trust
@@ -14,7 +15,7 @@ namespace aic :: trust
         public : 
         TrustEngine(); 
 
-        TrustDecision evaluate(
+        TrustResult evaluate(
             const string &entity_id, 
             const TrustEvidence &evidence  
         ); 
