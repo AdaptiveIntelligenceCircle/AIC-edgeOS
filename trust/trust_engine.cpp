@@ -1,5 +1,6 @@
 #include "trust_engine.h"
 #include "policy.cpp"
+#include "trust_audit.h"
 
 namespace aic::trust 
 {
@@ -30,6 +31,15 @@ TrustDecision TrustEngine::evaluate(
 const TrustState& TrustEngine::state() const 
 {
     return state_;
+}
+
+TrustResult TrustEngine :: evaluate(
+    const std::string& entity_id,
+    const TrustEvidence& evidence
+)
+{
+    // log_audit(entity_id);
+    // return result;
 }
 
 } // namespace aic::trust
