@@ -6,5 +6,7 @@ struct ScenarioContext
     string enviroment; // local // edge // offline 
     string actor;  // human / system/ external
     string intent;  // inferred intent
-    string sensitivity; // low / medium / high 
+    string sensitivity; // low / medium / high
+    
+    bool is_valid() const; 
 }; 

@@ -14,3 +14,15 @@ enum class ScenarioPhase
     COMPLETED, 
     ROLLED_BACK
 }; 
+
+class ScenarioState
+{
+    ScenarioState(); 
+
+    ScenarioPhase phase() const; 
+    void set_phase(ScenarioPhase p); 
+    bool is_terminal() const ; 
+
+    private: 
+    ScenarioPhase phase_;
+}; 

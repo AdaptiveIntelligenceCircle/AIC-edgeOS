@@ -12,16 +12,17 @@ namespace aic :: edge :: scenario
     {
         public: 
         Scenario (string id); 
-
+        Scenario() = default; 
+        
         const string &id() const; 
 
         ScenarioContext &context(); 
-        ScenarioPhase &state(); 
+        ScenarioState &state(); 
 
         private: 
 
         string scenario_id_; 
         ScenarioContext context_ ;
-        ScenarioPhase state_; 
+        ScenarioState state_; 
     }; 
 }

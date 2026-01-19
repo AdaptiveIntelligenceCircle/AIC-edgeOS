@@ -2,13 +2,20 @@
 using namespace std; 
 
 #include "scenario.h"
-#include <string> 
+#include <string>
+
+#include <memory>
+#include <vector>
 
 namespace aic :: edge :: scenario
 {
     class ScenarioRegistry
     {
-        void register_scenario(const Scenario&); 
-        Scenario *get_active_scenario(); 
+        public: 
+        void register_scenario(shared_ptr<Scenario> scenario);; 
+        shared_ptr<Scenario> get_active_scenario();
+
+        private: 
+        vector<shared_ptr<Scenario>> scenarios_; 
     }; 
 }
