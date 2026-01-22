@@ -7,7 +7,6 @@ self-defense, and ethical alignment.
 This project is part of the **Adaptive Intelligence Circle (AIC)** ecosystem.
 
 -- 
-![alt text](AIC-EdgeOS.png)
 
 ## 1. Why AIC-edgeOS exists
 
