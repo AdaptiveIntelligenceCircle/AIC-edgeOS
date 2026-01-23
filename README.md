@@ -8,6 +8,15 @@ This project is part of the **Adaptive Intelligence Circle (AIC)** ecosystem.
 
 -- 
 
+<p align="center">
+  <img src="assets/AIC-EdgeOS.png" alt="AIC Logo" width="1024" length = "1024"/>
+</p>
+
+<p align="center">
+  <strong> EdgeOS </strong><br>
+  Decentralized nodes • Ethical scaling • Planetary readiness
+</p>
+
 ## 1. Why AIC-edgeOS exists
 
 Modern operating systems and AI systems share a common limitation:
