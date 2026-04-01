@@ -8,6 +8,6 @@ namespace aic :: edge :: core
     {
         public:
         virtual ~IntrospectionHook() = default; 
-        virtual void on_state_change(const StateChange &); 
+        // virtual void on_state_change(const StateChange &); 
     }; 
 }
